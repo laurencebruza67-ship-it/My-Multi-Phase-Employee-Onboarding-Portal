@@ -69,6 +69,12 @@
             return;
         }
 
+        else if (uNameClean < 18) {
+            validationAlert.classList.remove('d-none');
+            validationAlert.textContent = "Validation Failure: Age must be between 18 to 100!";
+            return;
+        }
+
         else if (uNameClean > 100) {
             validationAlert.classList.remove('d-none');
             validationAlert.textContent = "Validation Failure: Age must be between 18 to 100!";
